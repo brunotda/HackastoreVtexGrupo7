@@ -106,3 +106,35 @@
 .orderByOptionItem:hover{
   background-color: rgba(255, 205, 178,0.4);
 }
+
+.searchNotFoundOops{
+  color: #1e1d20;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Montserrat' !important;
+}
+
+.searchNotFoundInfo{
+  color: #1e1d20;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat' !important;
+}
+
+.searchNotFoundWhatToDoDots{
+  color: #FFB4A2;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat' !important;
+}
+
+.searchNotFoundWhatDoIDo{
+  color: #FFB4A2;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat' !important;
+}
+
+.searchNotFoundWhatToDoDotsContainer{
+  padding-left: 15px;
+}

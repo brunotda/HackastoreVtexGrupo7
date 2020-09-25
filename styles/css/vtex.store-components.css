@@ -104,6 +104,10 @@
   display: none;
 }
 
+.price_listPrice{
+  color: #E5989B;
+}
+
 /* .imageElement--grid-row {
   min-width: 100%;
   height: 500px;
