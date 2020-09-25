@@ -13,14 +13,15 @@
   },
   "header-layout.desktop": {
     "children": [
-      "header-row#4-desktop",
-      "header-row#5-desktop"
+      "header-row#5-desktop",
+      "header-row#4-desktop"
     ]
   },
 
   "header-row#4-desktop": {
     "children": [
-      "logo#desktop"
+      "vtex.menu@2.x:menu#header-menu",
+      "header-spacer"
     ],
     "props": {
       "sticky": true,
@@ -40,10 +41,10 @@
 
   "header-row#5-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#category-menu",
-      "header-spacer",
+      "logo#desktop",
       "header-spacer",
       "search-bar",
+      "header-spacer",
       "login",
       "minicart"
     ],
@@ -56,7 +57,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-logo-large.png",
+      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
       "width": "110"
     }
   },
@@ -88,8 +89,8 @@
   "header-row#1-mobile": {
     "children": [
       "drawer",
-      "logo#mobile",
       "header-spacer",
+      "logo#mobile",
       "header-spacer",
       "minicart"
     ],
@@ -107,9 +108,12 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-electronics",
-      "menu-item#category-major-appliances",
-      "menu-item#category-small-appliances",
+      "menu-item#mobile-category-maquiagens",
+      "menu-item#mobile-category-perfumaria",
+      "menu-item#mobile-category-corpo-banho",
+      "menu-item#mobile-category-cabelos",
+      "menu-item#mobile-category-dermocosmeticos",
+      "menu-item#mobile-category-unhas",
       "menu-item#login"
     ],
     "props": {
@@ -121,8 +125,23 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
       "width": "70"
+    }
+  },
+  "menu-item#login": {
+    "props": {
+      "id": "menu-item-custom-login",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account",
+        "noFollow": true,
+        "tagTitle": "My account",
+        "text": "My account"
+      }
     }
   }
 }

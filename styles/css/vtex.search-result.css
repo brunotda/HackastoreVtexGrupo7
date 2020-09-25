@@ -1,3 +1,108 @@
 .resultGallery {
   margin-bottom: 35px;
 }
+
+.searchResultContainer{
+  max-width: 1300px;
+}
+
+.galleryTitle--layout{
+  font-size: 32px;
+  color: #1e1d20;
+  font-family: 'Montserrat' !important;
+}
+
+.filterMessage,
+.categoryItemName,
+.filterItem{
+  font-size: 16px;
+  color: #1e1d20;
+  font-family: 'Montserrat' !important;
+}
+
+.filterTitle{
+  font-size: 16px;
+  color: #e5989b;
+  font-family: 'Montserrat' !important;
+}
+
+.filterItem :global(.vtex-checkbox__label){
+  font-size: 16px;
+  color: #e5989b;
+  margin-top: 2px;
+  font-family: 'Montserrat' !important;
+}
+
+.filterItem :global(.vtex-checkbox__line-container){
+  display: flex;
+  align-items: center;
+}
+
+.orderByText{
+  color: #e5989b;
+}
+
+.totalProductsMessage{
+  color: #e5989b;
+}
+
+.caretIcon{
+  color: #b5838d;
+}
+
+.filterBreadcrumbsText{
+  font-size: 16px;
+  color: #e5989b;
+  font-family: 'Montserrat' !important;
+}
+
+.accordionFilterItemTitle{
+  font-size: 16px;
+  color: #e5989b;
+  font-family: 'Montserrat' !important;
+}
+
+.filterBreadcrumbsItemName{
+  font-size: 16px;
+  color: #1e1d20;
+  font-family: 'Montserrat' !important;
+}
+
+.filterClearButtonWrapper :global(.vtex-button__label){
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgb(255, 205, 178);
+  font-family: 'Montserrat' !important;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button){
+  border: none;
+  background-color: transparent;
+}
+
+.filterPopupButton{
+  margin-top: 10px;
+}
+
+.gridIcon{
+  margin-top: 5px;
+}
+
+.singleGridIcon{
+  margin-top: 5px;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button__label){
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #b5838d;
+  font-family: 'Montserrat' !important;
+}
+
+.orderByOptionItem:hover{
+  background-color: rgba(255, 205, 178,0.4);
+}
