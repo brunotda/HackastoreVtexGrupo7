@@ -22,7 +22,7 @@
   "shelf#shelf2": {
     "blocks": ["product-summary.shelf"],
     "props": {
-      "category": "1",
+      "category": "3",
       "orderBy": "OrderByReleaseDateDESC",
       "paginationDotsVisibility": true,
       "arrows": false,
@@ -34,7 +34,7 @@
         "minItemsPerPage": 2,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Nossas Novidades"
+        "titleText": "Produtos em Destaque"
       }
     }
   }
