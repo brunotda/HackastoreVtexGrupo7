@@ -27,6 +27,8 @@
       }
     }
   },
+
+
   "flex-layout.row#recomendacao":{
     "props":{
       "preventHorizontalStretch": true
@@ -35,7 +37,8 @@
   },
   "sandbox": {
     "props": {
-      "title": "teste"
+      "title": "Opinião profissional",
+      "opinion": "Opinião padrão"
     }
   },
   "flex-layout.row#product-breadcrumb": {
