@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
 
 .notificationBarContainer {
   background-color: #e6f1e6;
@@ -161,12 +162,18 @@
 
 .imageElement {
 }
-/*
-.shippingContainer {
-  background: red;
+
+
+.imageElement--professional-landing-banner{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  object-fit: none;
 }
 
 
-.shippingContainer .items-start {
-  width: 50%;
-} */
+@media (max-width: 1024px){
+  .imageElement--professional-landing-banner{
+    object-fit: cover;
+  }
+}
