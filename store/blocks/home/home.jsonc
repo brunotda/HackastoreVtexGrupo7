@@ -13,9 +13,9 @@
   },
   "slider-layout#home": {
     "children": [
-      "image#main-banner1",
-      "image#main-banner2",
-      "image#main-banner3"
+      "link#banner1",
+      "link#banner2",
+      "link#banner3"
     ],
     "props": {
       "autoplay": {
@@ -33,10 +33,28 @@
       "blockClass": "main-banners"
     }
   },
+  "link#banner1": {
+    "props": {
+      "href": "/wooden-perfume/"
+        },
+    "children":["image#main-banner1"]
+  },
+  "link#banner2": {
+    "props": {
+      "href": "/perfume/"
+        },
+    "children":["image#main-banner2"]
+  },
+  "link#banner3": {
+    "props": {
+      "href": "/Hair/"
+        },
+    "children":["image#main-banner3"]
+  },
   "image#main-banner1": {
     "props": {
       "src": "assets/main-banner-1.jpg",
-      "link": "/wooden-perfume",
+      "link": "/wooden-perfume/",
       "width": "100%",
       "blockClass": "main-banners-images"
     }
@@ -44,7 +62,7 @@
   "image#main-banner2": {
     "props": {
       "src": "assets/main-banner-2.jpg",
-      "link": "/wooden-perfume",
+      "link": "/wooden-perfume/",
       "width": "100%",
       "blockClass": "main-banners-images"
     }
@@ -52,7 +70,7 @@
   "image#main-banner3": {
     "props": {
       "src": "assets/main-banner-3.jpg",
-      "link": "/wooden-perfume",
+      "link": "/wooden-perfume/",
       "width": "100%",
       "blockClass": "main-banners-images"
     }
