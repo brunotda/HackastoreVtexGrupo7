@@ -3,13 +3,16 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
+      "sandbox",
+      "list-context.image-list#productOffer",
       "shelf#related",
-      "sandbox"
+      "flex-layout.row#newsletter"
     ]
   },
-
   "shelf#related": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
     "props": {
       "recomendation": "editor.relatedProducts.similars",
       "orderBy": "OrderByTopSaleDESC",
@@ -19,23 +22,22 @@
         "minItemsPerPage": 1.5,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "More options for this style"
+        "titleText": "Similares"
       }
     }
   },
-
   "sandbox": {
     "props": {
       "title": "teste"
     }
   },
-
-
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 20
     },
-    "children": ["breadcrumb"]
+    "children": [
+      "breadcrumb"
+    ]
   },
   "flex-layout.row#product-main": {
     "props": {
@@ -52,14 +54,12 @@
       "flex-layout.col#right-col"
     ]
   },
-
   "stack-layout": {
     "children": [
       "flex-layout.row#product-image",
       "product-specification-badges"
     ]
   },
-
   "product-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
@@ -68,56 +68,64 @@
       "displayValue": "SPECIFICATION_NAME"
     }
   },
-
   "flex-layout.col#stack": {
-    "children": ["stack-layout"],
+    "children": [
+       "responsive-layout.phone#product-info",
+      "stack-layout"
+    ],
     "props": {
       "width": "70%",
       "rowGap": 0
     }
   },
-
   "flex-layout.row#product-image": {
-    "children": ["product-images"]
+    "children": [
+      "product-images"
+    ]
   },
-
   "product-images": {
     "props": {
       "displayThumbnailsArrows": true,
       "thumbnailsOrientation": "vertical"
     }
   },
-
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
       "rowGap": 0
     },
     "children": [
-      "product-name",
+      "responsive-layout.desktop#product-info",
+      "responsive-layout.tablet#product-info",
       "product-price#product-details",
       "sku-selector",
+      "product-quantity",
       "flex-layout.row#buy-button",
       "shipping-simulator",
       "share#default"
     ]
   },
-
+  "product-identifier.product#showsku": {
+    "props": {
+      "label": "default",
+      "idField": "skuReferenceId"
+    }
+  },
   "product-price#product-details": {
     "props": {
       "showInstallments": true,
       "showSavings": true
     }
   },
-
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": ["buy-button"]
+    "children": [
+      "buy-button"
+    ]
   },
-
   "share#default": {
     "props": {
       "social": {
@@ -126,6 +134,46 @@
         "Twitter": false,
         "Pinterest": true
       }
+    }
+  },
+  "responsive-layout.desktop#product-info": {
+    "children": [
+      "product-name",
+      "product-identifier.product#showsku"
+    ]
+  },
+  "responsive-layout.tablet#product-info": {
+    "children": [
+      "product-name",
+      "product-identifier.product#showsku"
+    ]
+  },
+  "responsive-layout.phone#product-info": {
+    "children": [
+      "product-name",
+      "product-identifier.product#showsku"
+    ]
+  },
+  "list-context.image-list#productOffer":{
+    "children": ["slider-layout#productOffer"],
+    "props": {
+      "height": "auto",
+      "images": [
+        {
+          "image": "assets/chrome1.png",
+          "description": "Promocional"
+        }
+      ]
+    }
+  },
+  "slider-layout#productOffer": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
     }
   }
 }
