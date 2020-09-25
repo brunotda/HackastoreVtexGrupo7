@@ -3,16 +3,10 @@
     "blocks": [
       "slider-layout#home",
       "flex-layout.row#newsletter",
-      "image#prateleira1",
-      "image#prateleira2",
-      "image#grid-col",
+      "flex-layout.row#prateleira1",
+      "flex-layout.row#prateleira2",
       "flex-layout.row#grid-banner",
-      "shelf#new-arrivals",
-      "shelf#clearance",
-      "rich-text#brands",
-      "flex-layout.row#brands",
-      "rich-text#instagram",
-      "flex-layout.row#instagram"
+      "flex-layout.row#SEO"
     ]
   },
   "slider-layout#home": {
@@ -40,46 +34,92 @@
   "image#main-banner1": {
     "props": {
       "src": "assets/main-banner-1.jpg",
-      "maxHeight": "600px"
+      "width": "100%",
+      "blockClass": "main-banners-images"
     }
   },
   "image#main-banner2": {
     "props": {
       "src": "assets/main-banner-2.jpg",
-      "maxWidth": "100%",
-      "maxHeight": "600px"
+      "width": "100%",
+      "blockClass": "main-banners-images"
     }
   },
   "image#main-banner3": {
     "props": {
       "src": "assets/main-banner-3.jpg",
-      "maxWidth": "100%",
-      "maxHeight": "600px"
+      "width": "100%",
+      "blockClass": "main-banners-images"
     }
   },
-  "image#prateleira1": {
+  "flex-layout.row#prateleira1": {
+    "children": [
+      "list-context.image-list#prateleira-image1", "shelf#shelf1"
+    ],
     "props": {
-      "src": "assets/banner-first-1.jpg",
-      "mobileImage": "assets/banner-first-1.jpg",
-      "minWidth": "100%",
-      "blockClass": "prateleira-banners"
+      "blockClass": "shelf-banner"
+    }
+  },
+  "list-context.image-list#prateleira-image1":{
+    "children": ["slider-layout#prateleira-image1"],
+    "props": {
+      "width": "auto",
+      "height": 525,
+      "images": [
+        {
+          "image": "assets/banner-first-1.jpg",
+          "mobileImage": "assets/banner-first-1.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#prateleira-image1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "prateleira-image"
+    }
+  },
+  "flex-layout.row#prateleira2": {
+    "children": [
+      "shelf#shelf2", "list-context.image-list#prateleira-image2"
+    ]
+  },
+  "list-context.image-list#prateleira-image2":{
+    "children": ["slider-layout#prateleira-image2"],
+    "props": {
+      "width": "auto",
+      "height": 525,
+      "images": [
+        {
+          "image": "assets/banner-prateleira-2.jpg",
+          "mobileImage": "assets/banner-prateleira-2.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#prateleira-image2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "prateleira-image"
     }
   },
   "image#prateleira2": {
     "props": {
       "src": "assets/banner-prateleira-2.jpg",
       "mobileImage": "assets/banner-prateleira-2.jpg",
-      "minWidth": "100%",
+      "maxWidth": "100%",
+      "position": "right",
       "blockClass": "prateleira-banners"
-    }
-  },
-  "image#grid-col": {
-    "props": {
-      "src": "assets/banner-grid-1.jpg",
-      "mobileImage": "assets/banner-grid-1.jpg",
-      "minWidth": "100%",
-      "marginTop": "20px",
-      "blockClass": "banner-grid-col"
     }
   },
   "flex-layout.row#grid-banner": {
@@ -101,6 +141,7 @@
       "src": "assets/banner-grid-2.jpg",
       "mobileImage": "assets/banner-grid-2.jpg",
       "position": "left",
+      "height": "500",
       "minWidth": "100%",
       "blockClass": "grid-row"
     }
@@ -109,7 +150,8 @@
     "props": {
       "src": "assets/banner-grid-3.jpg",
       "mobileImage": "assets/banner-grid-3.jpg",
-      "position": "right",
+      "width": "100%",
+      "height": "250",
       "blockClass": "grid-col"
     }
   },
@@ -117,74 +159,48 @@
     "props": {
       "src": "assets/banner-grid-4.jpg",
       "mobileImage": "assets/banner-grid-4.jpg",
-      "position": "right",
+      "width": "100%",
+      "height": "250",
       "blockClass": "grid-col"
     }
   },
-
-  "carousel#home": {
-    "props": {
-      "autoplay": true,
-      "autoplaySpeed": 4,
-      "banners": [
-        {
-          "image": "assets/chrome1.png"
-        }
-      ],
-      "height": 440,
-      "showArrows": true,
-      "showDots": true
-    }
-  },
-
-  "flex-layout.row#slider": {
+  "flex-layout.row#SEO": {
     "children": [
-      // "slider-layout#styles",
-      "carousel#home"
-    ]
-  },
-
-  "flex-layout.row#brands": {
-    "children": [
-      "slider-layout#brands"
+      "image#imageSEO", "flex-layout.col#SEO"
     ],
     "props": {
-      "marginTop": 4,
-      "marginBottom": 8
+      "blockClass": "seo-block"
     }
   },
-
-  "shelf#new-arrivals": {
-    "blocks": ["product-summary.shelf"],
+  "image#imageSEO": {
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "paginationDotsVisibility": "never",
-      "collection": "137",
-      "productList": {
-        "maxItems": 9,
-        "itemsPerPage": 3,
-        "minItemsPerPage": 1.5,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "New arrivals"
-      }
+      "src": "assets/seo-banner.jpg",
+      "blockClass": "seo-image"
     }
   },
-
-  "shelf#clearance": {
-    "blocks": ["product-summary.shelf"],
+  "flex-layout.col#SEO": {
+    "children": [
+      "rich-text#title", "rich-text#text"
+    ]
+  },
+  "rich-text#title": {
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "collection": "140",
-      "paginationDotsVisibility": "desktopOnly",
-      "productList": {
-        "maxItems": 9,
-        "itemsPerPage": 3,
-        "minItemsPerPage": 1.5,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Clearance"
-      }
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Our brands",
+      "blockClass": "seo-title",
+      "textColor": "c-muted-1",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Our brands",
+      "blockClass": "seo-text",
+      "textColor": "c-muted-1",
+      "font": "t-heading-2"
     }
   }
 }

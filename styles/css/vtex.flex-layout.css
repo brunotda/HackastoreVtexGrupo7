@@ -50,10 +50,17 @@
 
 /* DEV */
 
-.flexRow--newsletter {
-  margin-top: 20px;
+.flexRowContent--newsletter {
+  margin-top: 0;
 }
 
+.flexRow--seo-block {
+  margin: 20px 0 60px 0;
+}
+
+.flexRowContent--newsletter {
+  padding: 0;
+}
 
 /* DEV */
 
@@ -62,7 +69,6 @@
     width: 50%;
   }
 }
-
 
 /* Footer */
 .flexRow--footer-row {
@@ -90,8 +96,7 @@
   filter: brightness(2);
 } */
 
-
 /* Product */
 .flexRow--product-main {
-  color: #727273
+  color: #727273;
 }

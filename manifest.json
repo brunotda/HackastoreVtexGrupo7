@@ -14,6 +14,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.store-image": "0.x",
     "vtex.store": "2.x",
     "vtex.order-placed": "1.x",
     "vtex.product-review-interfaces": "1.x",
