@@ -2,3 +2,17 @@
   /* background: red; */
   margin-top: 20px;
 }
+
+.homeIcon{
+  color: #e5989b;
+}
+
+.link{
+  font-size: 16px;
+  color: #e5989b;
+  font-family: 'Montserrat' !important;
+}
+
+.caretIcon{
+  color: #e5989b;
+}
