@@ -2,10 +2,27 @@
   width: 80%;
 }
 
-.container--newsletter{
+.container--newsletter {
   max-height: 350px;
 }
+.paragraph--seo-text {
+  font-size: 20px;
+  padding: 0 20px;
+  margin: 0;
+}
 
+@media (min-width: 660px) {
+  .paragraph--seo-title {
+    font-size: 70px;
+    padding-top: 50px;
+  }
+
+  .paragraph--seo-text {
+    font-size: 40px;
+    padding: 0 40px 80px 40px;
+    text-align: end;
+  }
+}
 .container--professional-landing-title{
   color: white;
   background-color:#FFCDB2;

@@ -10,7 +10,6 @@
   },
   "flex-layout.col#newsletter": {
     "children": [
-      "rich-text#newsletter",
       "rich-text#style-text",
       "flex-layout.row#newsletter-container"
     ],
@@ -22,19 +21,9 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "Be first to receive exclusive offers and updates",
+      "text": "Cadastre-se e receba 10% \n de desconto na primeira compra",
       "blockClass": "newsletter",
       "textColor": "c-muted-1"
-    }
-  },
-
-  "rich-text#newsletter": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Join our mailing list",
-      "textColor": "c-muted-1",
-      "font": "t-heading-2"
     }
   },
 

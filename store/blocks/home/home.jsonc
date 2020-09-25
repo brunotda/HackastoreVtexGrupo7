@@ -1,80 +1,269 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row#slider",
-      "shelf#new-arrivals",
-      "shelf#clearance",
+      "slider-layout#home",
       "flex-layout.row#newsletter",
-      "rich-text#brands",
-      "flex-layout.row#brands",
-      "rich-text#instagram",
-      "flex-layout.row#instagram"
+      "flex-layout.row#prateleira1",
+      "flex-layout.row#prateleira2",
+      "__fold__",
+      "slider-layout#brands",
+      "flex-layout.row#SEO"
     ]
   },
-
-  "carousel#home": {
-    "props": {
-      "autoplay": true,
-      "autoplaySpeed": 4,
-      "banners": [
-        {
-          "image": "assets/chrome1.png"
-        }
-      ],
-      "height": 440,
-      "showArrows": true,
-      "showDots": true
-    }
-  },
-
-  "flex-layout.row#slider": {
+  "slider-layout#home": {
     "children": [
-      // "slider-layout#styles",
-      "carousel#home"
-    ]
-  },
-
-  "flex-layout.row#brands": {
-    "children": [
-      "slider-layout#brands"
+      "image#main-banner1",
+      "image#main-banner2",
+      "image#main-banner3"
     ],
     "props": {
-      "marginTop": 4,
-      "marginBottom": 8
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": true,
+      "blockClass": "main-banners"
     }
   },
-
-  "shelf#new-arrivals": {
-    "blocks": ["product-summary.shelf"],
+  "image#main-banner1": {
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "paginationDotsVisibility": "never",
-      "collection": "137",
-      "productList": {
-        "maxItems": 9,
-        "itemsPerPage": 3,
-        "minItemsPerPage": 1.5,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "New arrivals"
-      }
+      "src": "assets/main-banner-1.jpg",
+      "link": "/wooden-perfume",
+      "width": "100%",
+      "blockClass": "main-banners-images"
     }
   },
-
-  "shelf#clearance": {
-    "blocks": ["product-summary.shelf"],
+  "image#main-banner2": {
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "collection": "140",
-      "paginationDotsVisibility": "desktopOnly",
-      "productList": {
-        "maxItems": 9,
-        "itemsPerPage": 3,
-        "minItemsPerPage": 1.5,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Clearance"
-      }
+      "src": "assets/main-banner-2.jpg",
+      "link": "/wooden-perfume",
+      "width": "100%",
+      "blockClass": "main-banners-images"
+    }
+  },
+  "image#main-banner3": {
+    "props": {
+      "src": "assets/main-banner-3.jpg",
+      "link": "/wooden-perfume",
+      "width": "100%",
+      "blockClass": "main-banners-images"
+    }
+  },
+  "flex-layout.row#prateleira1": {
+    "children": [
+      "list-context.image-list#prateleira-image1", "shelf#shelf1"
+    ],
+    "props": {
+      "blockClass": "shelf-banner"
+    }
+  },
+  "list-context.image-list#prateleira-image1":{
+    "children": ["slider-layout#prateleira-image1"],
+    "props": {
+      "width": "auto",
+      "height": 525,
+      "images": [
+        {
+          "image": "assets/banner-first-1.jpg",
+          "mobileImage": "assets/banner-first-1.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#prateleira-image1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "prateleira-image"
+    }
+  },
+  "flex-layout.row#prateleira2": {
+    "children": [
+      "shelf#shelf2", "list-context.image-list#prateleira-image2"
+    ]
+  },
+  "list-context.image-list#prateleira-image2":{
+    "children": ["slider-layout#prateleira-image2"],
+    "props": {
+      "width": "auto",
+      "height": 525,
+      "images": [
+        {
+          "image": "assets/banner-prateleira-2.jpg",
+          "mobileImage": "assets/banner-prateleira-2.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#prateleira-image2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "prateleira-image"
+    }
+  },
+  "image#prateleira2": {
+    "props": {
+      "src": "assets/banner-prateleira-2.jpg",
+      "mobileImage": "assets/banner-prateleira-2.jpg",
+      "maxWidth": "100%",
+      "position": "right",
+      "blockClass": "prateleira-banners"
+    }
+  },
+  "flex-layout.row#grid-banner": {
+    "children": [
+      "image#grid-row", "flex-layout.col#grid-banner"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#grid-banner": {
+    "children": [
+      "image#grid-col1",
+      "image#grid-col2"
+    ]
+  },
+  "image#grid-row": {
+    "props": {
+      "src": "assets/banner-grid-2.jpg",
+      "mobileImage": "assets/banner-grid-2.jpg",
+      "blockClass": "grid-row"
+    }
+  },
+  "image#grid-col1": {
+    "props": {
+      "src": "assets/banner-grid-3.jpg",
+      "mobileImage": "assets/banner-grid-3.jpg",
+      "blockClass": "grid-col"
+    }
+  },
+  "image#grid-col2": {
+    "props": {
+      "src": "assets/banner-grid-4.jpg",
+      "mobileImage": "assets/banner-grid-4.jpg",
+      "blockClass": "grid-col"
+    }
+  },
+  "flex-layout.row#SEO": {
+    "children": [
+      "image#imageSEO", "flex-layout.col#SEO"
+    ],
+    "props": {
+      "blockClass": "seo-block"
+    }
+  },
+  "image#imageSEO": {
+    "props": {
+      "src": "assets/seo-banner.jpg",
+      "maxHeight": "800px",
+      "blockClass": "seo-image"
+    }
+  },
+  "flex-layout.col#SEO": {
+    "children": [
+      "rich-text#title", "rich-text#text"
+    ]
+  },
+  "rich-text#title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Our brands",
+      "blockClass": "seo-title",
+      "textColor": "c-muted-1",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Our brands",
+      "blockClass": "seo-text",
+      "textColor": "c-muted-1",
+      "font": "t-heading-2"
+    }
+  },
+  "slider-layout#brands": {
+    "children": [
+      "image#brands1",
+      "image#brands2",
+      "image#brands3",
+      "image#brands4",
+      "image#brands5"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "titleText": "Nossas Marcas",
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": true,
+      "blockClass": "slider-brands"
+    }
+  },
+  "image#brands1": {
+    "props": {
+      "src": "assets/brands1.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands2": {
+    "props": {
+      "src": "assets/brands2.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands3": {
+    "props": {
+      "src": "assets/brands3.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands4": {
+    "props": {
+      "src": "assets/brands4.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands5": {
+    "props": {
+      "src": "assets/brands5.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
     }
   }
 }
