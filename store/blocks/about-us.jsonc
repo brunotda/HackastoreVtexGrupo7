@@ -1,0 +1,40 @@
+{
+  "store.custom#about-us": {
+      "blocks": [
+          "flex-layout.row#about-us"
+      ]
+  },
+  "flex-layout.row#about-us": {
+      "children": [
+          "image#about-us",
+          "flex-layout.col#text-about-us"
+      ]
+  },
+  "flex-layout.col#text-about-us": {
+      "children": [
+          "rich-text#about-title",
+          "rich-text#about-content"
+      ],
+      "props": {
+          "preventVerticalStretch": true
+      }
+  },
+  "rich-text#about-title": {
+      "props": {
+      "text":
+          "# Sobre o Grupo 7"
+      }
+  },
+  "rich-text#about-content": {
+      "props": {
+          "text":
+              " ### O melhor grupo da Hackastore! \n Somos um grupo misto, que além de beleza temos instintos, e são esses instintos que fazem com que este grupo se torne a melhor fragância de todo o VTEX Training Week, sinta nosso perfume, veja nossa beleza, desfrute de nossa loja!"
+      }
+  },
+  "image#about-us": {
+      "props": {
+      "src": "https://www.jeronimosilva.com.br/grupo7team.jpg",
+      "maxHeight": "600px"
+      }
+  }
+}
