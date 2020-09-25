@@ -1,0 +1,89 @@
+.styledLinkContainer--menu-item-categoria-unhas,
+.styledLinkContainer--menu-item-categoria-dermocosmeticos,
+.styledLinkContainer--menu-item-categoria-corpo-banho,
+.styledLinkContainer--menu-item-categoria-cabelos,
+.styledLinkContainer--menu-item-categoria-perfumaria,
+.styledLinkContainer--menu-item-categoria-maquiagens {
+  margin-left: 11px !important;
+  margin-right: 11px !important;
+}
+.styledLinkIcon--menu-item-categoria-unhas,
+.styledLinkIcon--menu-item-categoria-dermocosmeticos,
+.styledLinkIcon--menu-item-categoria-corpo-banho,
+.styledLinkIcon--menu-item-categoria-cabelos,
+.styledLinkIcon--menu-item-categoria-perfumaria,
+.styledLinkIcon--menu-item-categoria-maquiagens {
+  text-align: center;
+  display: block;
+}
+
+.styledLink--menu-item-categoria-unhas::before,
+.styledLink--menu-item-categoria-dermocosmeticos::before,
+.styledLink--menu-item-categoria-corpo-banho::before,
+.styledLink--menu-item-categoria-cabelos::before,
+.styledLink--menu-item-categoria-perfumaria::before,
+.styledLink--menu-item-categoria-maquiagens::before{
+  content: "";
+  background-size: 32px 32px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 8px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.styledLink--menu-mobile-item-categoria-unhas::before,
+.styledLink--menu-mobile-item-categoria-dermocosmeticos::before,
+.styledLink--menu-mobile-item-categoria-corpo-banho::before,
+.styledLink--menu-mobile-item-categoria-cabelos::before,
+.styledLink--menu-mobile-item-categoria-perfumaria::before,
+.styledLink--menu-mobile-item-categoria-maquiagens::before{
+  background-size: 32px 32px;
+  content: "";
+  cursor: pointer;
+  height: 32px;
+  margin-right: 26px;
+  width: 32px;
+}
+.styledLink--menu-mobile-item-categoria-unhas,
+.styledLink--menu-mobile-item-categoria-dermocosmeticos,
+.styledLink--menu-mobile-item-categoria-corpo-banho,
+.styledLink--menu-mobile-item-categoria-cabelos,
+.styledLink--menu-mobile-item-categoria-perfumaria,
+.styledLink--menu-mobile-item-categoria-maquiagens {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.styledLink--menu-item-categoria-maquiagens::before,
+.styledLink--menu-mobile-item-categoria-maquiagens::before{
+  background-image: url("assets/icones/cosmetics.svg");
+}
+.styledLink--menu-item-categoria-perfumaria::before,
+.styledLink--menu-mobile-item-categoria-perfumaria::before{
+  background-image: url("assets/icones/perfumaria.svg");
+}
+.styledLink--menu-item-categoria-cabelos::before,
+.styledLink--menu-mobile-item-categoria-cabelos::before{
+  background-image: url("assets/icones/cabelos.svg");
+}
+.styledLink--menu-item-categoria-corpo-banho::before,
+.styledLink--menu-mobile-item-categoria-corpo-banho::before{
+  background-image: url("assets/icones/skincareb.svg");
+}
+.styledLink--menu-item-categoria-dermocosmeticos::before,
+.styledLink--menu-mobile-item-categoria-dermocosmeticos::before{
+  background-image: url("assets/icones/skincare.svg");
+}
+.styledLink--menu-item-categoria-unhas::before,
+.styledLink--menu-mobile-item-categoria-unhas::before{
+  background-image: url("assets/icones/unhas.svg");
+}
+
+.styledLink--als-footer-title{
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
