@@ -1,15 +1,125 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row#slider",
+      "slider-layout#home",
+      "flex-layout.row#newsletter",
+      "image#prateleira1",
+      "image#prateleira2",
+      "image#grid-col",
+      "flex-layout.row#grid-banner",
       "shelf#new-arrivals",
       "shelf#clearance",
-      "flex-layout.row#newsletter",
       "rich-text#brands",
       "flex-layout.row#brands",
       "rich-text#instagram",
       "flex-layout.row#instagram"
     ]
+  },
+  "slider-layout#home": {
+    "children": [
+      "image#main-banner1",
+      "image#main-banner2",
+      "image#main-banner3"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": true,
+      "blockClass": "main-banners"
+    }
+  },
+  "image#main-banner1": {
+    "props": {
+      "src": "assets/main-banner-1.jpg",
+      "maxHeight": "600px"
+    }
+  },
+  "image#main-banner2": {
+    "props": {
+      "src": "assets/main-banner-2.jpg",
+      "maxWidth": "100%",
+      "maxHeight": "600px"
+    }
+  },
+  "image#main-banner3": {
+    "props": {
+      "src": "assets/main-banner-3.jpg",
+      "maxWidth": "100%",
+      "maxHeight": "600px"
+    }
+  },
+  "image#prateleira1": {
+    "props": {
+      "src": "assets/banner-first-1.jpg",
+      "mobileImage": "assets/banner-first-1.jpg",
+      "minWidth": "100%",
+      "blockClass": "prateleira-banners"
+    }
+  },
+  "image#prateleira2": {
+    "props": {
+      "src": "assets/banner-prateleira-2.jpg",
+      "mobileImage": "assets/banner-prateleira-2.jpg",
+      "minWidth": "100%",
+      "blockClass": "prateleira-banners"
+    }
+  },
+  "image#grid-col": {
+    "props": {
+      "src": "assets/banner-grid-1.jpg",
+      "mobileImage": "assets/banner-grid-1.jpg",
+      "minWidth": "100%",
+      "marginTop": "20px",
+      "blockClass": "banner-grid-col"
+    }
+  },
+  "flex-layout.row#grid-banner": {
+    "children": [
+      "image#grid-row", "flex-layout.col#grid-banner"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#grid-banner": {
+    "children": [
+      "image#grid-col1",
+      "image#grid-col2"
+    ]
+  },
+  "image#grid-row": {
+    "props": {
+      "src": "assets/banner-grid-2.jpg",
+      "mobileImage": "assets/banner-grid-2.jpg",
+      "position": "left",
+      "minWidth": "100%",
+      "blockClass": "grid-row"
+    }
+  },
+  "image#grid-col1": {
+    "props": {
+      "src": "assets/banner-grid-3.jpg",
+      "mobileImage": "assets/banner-grid-3.jpg",
+      "position": "right",
+      "blockClass": "grid-col"
+    }
+  },
+  "image#grid-col2": {
+    "props": {
+      "src": "assets/banner-grid-4.jpg",
+      "mobileImage": "assets/banner-grid-4.jpg",
+      "position": "right",
+      "blockClass": "grid-col"
+    }
   },
 
   "carousel#home": {

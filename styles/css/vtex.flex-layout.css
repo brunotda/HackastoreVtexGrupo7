@@ -15,15 +15,6 @@
   margin-bottom: 35px;
 }
 
-/* .flexColChild--newsletter :global(p) {
-  margin-bottom: 0;
-} */
-
-/* .flexColChild--newsletter :global(.buttonContainer) {
-  padding: 0;
-  background: red;
-} */
-
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
 }
@@ -56,6 +47,15 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+
+/* DEV */
+
+.flexRow--newsletter {
+  margin-top: 20px;
+}
+
+
+/* DEV */
 
 @media only screen and (min-width: 640px) {
   .flexColChild--pinkCol {
