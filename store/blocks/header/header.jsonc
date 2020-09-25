@@ -114,6 +114,7 @@
       "menu-item#mobile-category-cabelos",
       "menu-item#mobile-category-dermocosmeticos",
       "menu-item#mobile-category-unhas",
+      "header-spacer",
       "menu-item#login"
     ],
     "props": {
@@ -125,7 +126,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
+      "url": "assets/logogrupo7-preto.png",
       "width": "70"
     }
   },
