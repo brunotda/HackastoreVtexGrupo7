@@ -59,7 +59,8 @@
     "children": ["breadcrumb.search"],
     "props": {
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "breadcrumb-grupo-sete"
     }
   },
 

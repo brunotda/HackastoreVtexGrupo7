@@ -1,0 +1,116 @@
+{
+  "vtex.menu@2.x:menu#header-menu-mobile": {
+    "children": [
+      "menu-item#mobile-category-maquiagens",
+      "menu-item#mobile-category-perfumaria",
+      "menu-item#mobile-category-corpo-banho",
+      "menu-item#mobile-category-cabelos",
+      "menu-item#mobile-category-dermocosmeticos",
+      "menu-item#mobile-category-unhas"
+    ]
+  },
+  "menu-item#mobile-category-maquiagens": {
+    "props": {
+      "id": "menu-item-category-Maquiagens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-mobile-item-categoria-maquiagens",
+      "itemProps": {
+        "categoryId": 153,
+        "type": "internal",
+        "href": "/electronics/",
+        "noFollow": true,
+        "tagTitle": "Maquiagens",
+        "text": "Maquiagens"
+      },
+      "iconToTheRight": true
+    }
+  },
+  "menu-item#mobile-category-perfumaria": {
+    "props": {
+      "id": "menu-item-category-Perfumaria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-mobile-item-categoria-perfumaria",
+      "itemProps": {
+        "categoryId": 153,
+        "type": "internal",
+        "href": "/electronics/",
+        "noFollow": true,
+        "tagTitle": "Perfumaria",
+        "text": "Perfumaria"
+      },
+      "iconToTheRight": true
+    }
+  },
+  "menu-item#mobile-category-cabelos": {
+    "props": {
+      "id": "menu-mobile-item-category-cabelos",
+      "type": "custom",
+      "iconId": null,
+      "blockClass": "menu-mobile-item-categoria-cabelos",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": "151",
+        "type": "internal",
+        "href": "/major-appliances/",
+        "noFollow": true,
+        "tagTitle": "Cabelos",
+        "text": "Cabelos"
+      }
+    }
+  },
+  "menu-item#mobile-category-dermocosmeticos": {
+    "props": {
+      "id": "menu-item-category-dermocosmeticos",
+      "type": "custom",
+      "iconId": null,
+      "blockClass": "menu-mobile-item-categoria-dermocosmeticos",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": "151",
+        "type": "internal",
+        "href": "/major-appliances/",
+        "noFollow": true,
+        "tagTitle": "Dermocosmeticos",
+        "text": "Dermocosmeticos"
+      }
+    }
+  },
+  "menu-item#mobile-category-unhas": {
+    "props": {
+      "id": "menu-item-category-unhas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-mobile-item-categoria-unhas",
+      "itemProps": {
+        "categoryId": "151",
+        "type": "internal",
+        "href": "/major-appliances/",
+        "noFollow": true,
+        "tagTitle": "Unhas",
+        "text": "Unhas"
+      }
+    }
+  },
+  "menu-item#mobile-category-corpo-banho": {
+    "props": {
+      "id": "menu-item-category-Corpo-banho",
+      "type": "custom",
+      "iconId": null,
+      "blockClass": "menu-mobile-item-categoria-corpo-banho",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 152,
+        "type": "internal",
+        "href": "/small-appliances",
+        "noFollow": true,
+        "tagTitle": "Corpo e Banho",
+        "text": "Corpo e Banho"
+      }
+    }
+  }
+}

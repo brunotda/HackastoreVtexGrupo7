@@ -1,71 +1,141 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-1-desktop"
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop" 
     ]
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "flex-layout.col#footer-left-desktop",
-      "flex-layout.col#footer-right-desktop"
+      "image"
     ],
     "props": {
-      "blockClass": "footer-row",
-      "paddingTop": 7,
-      "paddingBottom": 7
+      "blockClass": "als-footer"
     }
   },
-
-  "flex-layout.col#footer-left-desktop": {
-    "children": ["vtex.menu@2.x:menu#category-menu"],
+  "image": {
     "props": {
-      "blockClass": "footer-menu"
+      "maxWidth": 205,
+      "src": "https://www.estacaodamodastore.com.br/arquivos/logo.svg"
     }
   },
-
-  "flex-layout.col#footer-right-desktop": {
-    "children": ["accepted-payment-methods"],
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#institucional",
+      "vtex.menu@2.x:menu#minhaconta",
+      "vtex.menu@2.x:menu#politicas",
+      "vtex.menu@2.x:menu#ajuda",
+      "vtex.menu@2.x:menu#revenda"
+    ],
     "props": {
-      "blockClass": "footer-payment-methods"
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
     }
   },
-
-  "accepted-payment-methods": {
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "social-networks"
+    ]
+  },
+  "social-networks": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#footer-4-desktop": {
+    "children": [
+      "rich-text#empresa",
+      "rich-text#creditos"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#empresa": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Grupo 7 Cosméticos \n Rua Mario da Silva, 1906, sala 01 | São Paulo - SP \n Cnpj 293994858585",
+      "blockClass": "empresa-titulo"
+    }
+  },
+  "rich-text#creditos": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Created with much love by: Grupo 7 Cosméticos",
+      "blockClass": "empresa-titulo"
     }
   },
   "footer-layout.mobile": {
-
     "children": [
-      "flex-layout.row#mid-footer"
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile",
+      "flex-layout.row#4-footer-mobile"
     ]
   },
-  "flex-layout.row#mid-footer": {
+  "flex-layout.row#1-footer-mobile": {
+    "children": [
+      "image"
+    ],
+    "props":{"blockClass": "als-footer"}
+  },
+  "flex-layout.row#2-footer-mobile": {
     "props": {
-      "blockClass": "footer-row"
+      "paddingTop": 4,
+      "paddingBottom": 4
     },
     "children": [
-      "flex-layout.col#colFoot"
+      "vtex.menu@2.x:menu#footer-mobile"
     ]
   },
-
-  "flex-layout.col#colFoot": {
+  "flex-layout.row#3-footer-mobile": {
     "children": [
-      "vtex.menu@2.x:menu#footer"
+      "social-networks"
     ]
   },
-  "vtex.menu@2.x:menu#footer": {
+  "flex-layout.row#4-footer-mobile": {
+    "children": [
+      "rich-text#empresa-mobile"
+    ],
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-electronics",
-      "menu-item#category-major-appliances",
-      "menu-item#category-small-appliances"
-    ]
+      "blockClass": "credits",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "rich-text#empresa-mobile": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Grupo 7 Cosméticos \n Rua Mario Silva, 1906, sala 01 | São Paulo - SP \n Cnpj 885747747565",
+      "blockClass": "empresa-titulo-mobile"
+    }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "store.custom#professional-landing": {
+    "blocks": [
+      "rich-text#professional-landing-title",
+      "rich-text#professional-landing-description",
+      "image#professional-landing-banner"
+    ]
+  },
+  "rich-text#professional-landing-title": {
+    "props": {
+      "text": "**Recomendações de profissionais!**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": "professional-landing-title"
+    }
+  },
+  "rich-text#professional-landing-description": {
+    "props": {
+      "text": "Pensando sempre em vocês e, como utilizam nossos produtos, o Grupo 7 criou uma parceria com diversos profissionais do ramo da beleza para trazer para vocês as melhores recomendações dos nossos produtos. Acesse o produto que você deseja e confira o que aquele profissional que você ama recomenda! :D",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "professional-landing-description"
+    }
+  },
+  "image#professional-landing-banner": {
+      "props": {
+        "src": "assets/maquiadores.jpg",
+        "alt": "Maquiadores famosos",
+        "maxWidth": "100%",
+        "blockClass": "professional-landing-banner"
+      }
+  }
+}

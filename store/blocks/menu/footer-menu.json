@@ -1,0 +1,451 @@
+{
+  "vtex.menu@2.x:menu#institucional":{
+      "props":{"orientation": "vertical"},
+      "children":[
+          "menu-item#institucionaltitulo",
+          "menu-item#sobrenos",
+          "menu-item#gruposete"
+      ]
+  },
+  "menu-item#institucionaltitulo":{
+      "props":{
+          "id": "menu-item-ajuda-titulo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "als-footer-title",
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Institucional",
+              "text": "Institucional"
+          }
+      }
+  },
+  "menu-item#sobrenos":{
+      "props":{
+          "id": "menu-item-sobrenos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Sobre Nós",
+              "text": "Sobre Nós"
+          }
+      }
+  },
+  "menu-item#gruposete":{
+      "props":{
+          "id": "menu-item-gruposete",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps":{
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Grupo 7 Cosméticos",
+              "text": "Grupo 7 Cosméticos"
+          }
+      }
+  },
+
+  "vtex.menu@2.x:menu#minhaconta":{
+      "props":{"orientation": "vertical"},
+      "children":[
+          "menu-item#minhacontatitulo",
+          "menu-item#perfil",
+          "menu-item#pedidos"
+      ]
+  },
+  "menu-item#minhacontatitulo":{
+      "props":{
+          "id": "menu-item-ajuda-titulo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "als-footer-title",
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Minha Conta",
+              "text": "Minha Conta"
+          }
+      }
+  },
+  "menu-item#perfil":{
+      "props":{
+          "id": "menu-item-perfil",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Perfil",
+              "text": "Perfil"
+          }
+      }
+  },
+  "menu-item#pedidos":{
+      "props":{
+          "id": "menu-item-pedidos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps":{
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Pedidos",
+              "text": "Pedidos"
+          }
+      }
+  },
+
+
+  "vtex.menu@2.x:menu#politicas":{
+      "props":{"orientation": "vertical"},
+      "children":[
+          "menu-item#politicastitulo",
+          "menu-item#privacidade",
+          "menu-item#devolucoes",
+          "menu-item#trocas"
+      ]
+  },
+  "menu-item#politicastitulo":{
+      "props":{
+          "id": "menu-item-ajuda-titulo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "als-footer-title",
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Politicas",
+              "text": "Politicas"
+          }
+      }
+  },
+  "menu-item#privacidade":{
+      "props":{
+          "id": "menu-item-privacidade",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Privacidade",
+              "text": "Privacidade"
+          }
+      }
+  },
+  "menu-item#devolucoes":{
+      "props":{
+          "id": "menu-item-devolucoes",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps":{
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Devoluções",
+              "text": "Devoluções"
+          }
+      }
+  },
+  "menu-item#trocas":{
+      "props":{
+          "id": "menu-item-trocas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps":{
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Trocas",
+              "text": "Trocas"
+          }
+      }
+  },
+
+  "vtex.menu@2.x:menu#ajuda":{
+      "props":{"orientation": "vertical"},
+      "children":[
+          "menu-item#ajudatitulo",
+          "menu-item#guiadecompras",
+          "menu-item#mapasite",
+          "menu-item#contatos"
+      ]
+  },
+  "menu-item#ajudatitulo":{
+      "props":{
+          "id": "menu-item-ajuda-titulo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "als-footer-title",
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Ajuda",
+              "text": "Ajuda"
+          }
+      }
+  },
+  "menu-item#guiadecompras":{
+      "props":{
+          "id": "menu-item-guiadecompras",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Guia de compras",
+              "text": "Guia de compras"
+          }
+      }
+  },
+  "menu-item#mapasite":{
+      "props":{
+          "id": "menu-item-mapasite",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps":{
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Mapa do Site",
+              "text": "Mapa do Site"
+          }
+      }
+  },
+  "menu-item#contatos":{
+      "props":{
+          "id": "menu-item-contatos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps":{
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Contatos",
+              "text": "Contatos"
+          }
+      }
+  },
+  "vtex.menu@2.x:menu#revenda":{
+      "props":{"orientation": "vertical"},
+      "children":[
+          "menu-item#revendatitulo",
+          "menu-item#atacado"
+      ]
+  },
+  "menu-item#revendatitulo":{
+      "props":{
+          "id": "menu-item-revenda-titulo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "als-footer-title",
+          "itemProps": {
+              "type":"internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Revenda",
+              "text": "Revenda"
+          }
+      }
+  },
+  "menu-item#atacado":{
+      "props":{
+          "id": "menu-item-atacado",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps":{
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Atacado",
+              "text": "Atacado"
+          }
+      }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile":{
+      "props":{ "orientation": "vertical" },
+      "children": [
+          "menu-item#institucional-mobile",
+          "menu-item#minhaconta-mobile",
+          "menu-item#politicas-mobile",
+          "menu-item#ajuda-mobile",
+          "menu-item#revenda-mobile"
+      ]
+  },
+  "menu-item#institucional-mobile":{
+      "props":{
+          "id": "menu-item-institucional-mobile",
+          "type": "custom",
+          "iconId": null,
+          "highlight":false,
+          "blockClass": "als-footer-title",
+          "itemProps":{
+              "type":"internal",
+              "href":"#",
+              "noFollow": true,
+              "tagTitle": "Institucional",
+              "text": "Institucional"
+          }
+      },
+      "blocks":["vtex.menu@2.x:submenu.accordion#institucional"]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional":{
+      "children":["vtex.menu@2.x:menu#institucional-accordion"]
+  },
+  "vtex.menu@2.x:menu#institucional-accordion":{
+      "props": {
+          "orientation": "vertical"
+      },
+      "children":[
+          "menu-item#sobrenos",
+          "menu-item#gruposete"
+      ]
+  },
+  "menu-item#minhaconta-mobile":{
+      "props":{
+          "id": "menu-item-minhaconta-mobile",
+          "type": "custom",
+          "iconId": null,
+          "highlight":false,
+          "blockClass": "als-footer-title",
+          "itemProps":{
+              "type":"internal",
+              "href":"#",
+              "noFollow": true,
+              "tagTitle": "Minha Conta",
+              "text": "Minha Conta"
+          }
+      },
+      "blocks":["vtex.menu@2.x:submenu.accordion#minhaconta"]
+  },
+  "vtex.menu@2.x:submenu.accordion#minhaconta":{
+      "children":["vtex.menu@2.x:menu#minhaconta-accordion"]
+  },
+  "vtex.menu@2.x:menu#minhaconta-accordion":{
+      "props": {
+          "orientation": "vertical"
+      },
+      "children":[
+          "menu-item#perfil",
+          "menu-item#pedidos"
+      ]
+  },
+  "menu-item#politicas-mobile":{
+      "props":{
+          "id": "menu-item-politicas-mobile",
+          "type": "custom",
+          "iconId": null,
+          "highlight":false,
+          "blockClass": "als-footer-title",
+          "itemProps":{
+              "type":"internal",
+              "href":"#",
+              "noFollow": true,
+              "tagTitle": "Politicas",
+              "text": "Politicas"
+          }
+      },
+      "blocks":["vtex.menu@2.x:submenu.accordion#politicas"]
+  },
+  "vtex.menu@2.x:submenu.accordion#politicas":{
+      "children":["vtex.menu@2.x:menu#politicas-accordion"]
+  },
+  "vtex.menu@2.x:menu#politicas-accordion":{
+      "props": {
+          "orientation": "vertical"
+      },
+      "children":[
+          "menu-item#privacidade",
+          "menu-item#devolucoes",
+          "menu-item#trocas"
+      ]
+  },
+  "menu-item#ajuda-mobile":{
+      "props":{
+          "id": "menu-item-ajuda-mobile",
+          "type": "custom",
+          "iconId": null,
+          "highlight":false,
+          "blockClass": "als-footer-title",
+          "itemProps":{
+              "type":"internal",
+              "href":"#",
+              "noFollow": true,
+              "tagTitle": "Ajuda",
+              "text": "Ajuda"
+          }
+      },
+      "blocks":["vtex.menu@2.x:submenu.accordion#ajuda"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ajuda":{
+      "children":["vtex.menu@2.x:menu#ajuda-accordion"]
+  },
+  "vtex.menu@2.x:menu#ajuda-accordion":{
+      "props": {
+          "orientation": "vertical"
+      },
+      "children":[
+          "menu-item#guiadecompras",
+          "menu-item#mapasite",
+          "menu-item#contatos"
+      ]
+  },
+  "menu-item#revenda-mobile":{
+      "props":{
+          "id": "menu-item-revenda-mobile",
+          "type": "custom",
+          "iconId": null,
+          "highlight":false,
+          "blockClass": "als-footer-title",
+          "itemProps":{
+              "type":"internal",
+              "href":"#",
+              "noFollow": true,
+              "tagTitle": "Revenda",
+              "text": "Revenda"
+          }
+      },
+      "blocks":["vtex.menu@2.x:submenu.accordion#revenda"]
+  },
+  "vtex.menu@2.x:submenu.accordion#revenda":{
+      "children":["vtex.menu@2.x:menu#revenda-accordion"]
+  },
+  "vtex.menu@2.x:menu#revenda-accordion":{
+      "props": {
+          "orientation": "vertical"
+      },
+      "children":[
+          "menu-item#atacado"
+      ]
+  }
+  
+
+}
