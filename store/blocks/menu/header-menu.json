@@ -13,7 +13,7 @@
     "props": {
       "id": "menu-item-category-Maquiagens",
       "type": "custom",
-      "iconId": null,
+      "iconId": true,
       "highlight": false,
       "blockClass": "menu-item-categoria-maquiagens",
       "itemProps": {
