@@ -127,41 +127,6 @@
       "blockClass": "prateleira-banners"
     }
   },
-  "flex-layout.row#grid-banner": {
-    "children": [
-      "image#grid-row", "flex-layout.col#grid-banner"
-    ],
-    "props": {
-      "preserveLayoutOnMobile": true
-    }
-  },
-  "flex-layout.col#grid-banner": {
-    "children": [
-      "image#grid-col1",
-      "image#grid-col2"
-    ]
-  },
-  "image#grid-row": {
-    "props": {
-      "src": "assets/banner-grid-2.jpg",
-      "mobileImage": "assets/banner-grid-2.jpg",
-      "blockClass": "grid-row"
-    }
-  },
-  "image#grid-col1": {
-    "props": {
-      "src": "assets/banner-grid-3.jpg",
-      "mobileImage": "assets/banner-grid-3.jpg",
-      "blockClass": "grid-col"
-    }
-  },
-  "image#grid-col2": {
-    "props": {
-      "src": "assets/banner-grid-4.jpg",
-      "mobileImage": "assets/banner-grid-4.jpg",
-      "blockClass": "grid-col"
-    }
-  },
   "flex-layout.row#SEO": {
     "children": [
       "image#imageSEO", "flex-layout.col#SEO"
