@@ -21,5 +21,6 @@
   .paragraph--seo-text {
     font-size: 40px;
     padding: 0 40px 80px 40px;
+    text-align: end;
   }
 }

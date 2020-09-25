@@ -24,7 +24,7 @@
     "props": {
       "category": "1",
       "orderBy": "OrderByReleaseDateDESC",
-      "paginationDotsVisibility": "desktopOnly",
+      "paginationDotsVisibility": true,
       "arrows": false,
       "blockClass": "shelf1",
       "productList": {

@@ -5,7 +5,8 @@
       "flex-layout.row#newsletter",
       "flex-layout.row#prateleira1",
       "flex-layout.row#prateleira2",
-      "flex-layout.row#grid-banner",
+      "__fold__",
+      "slider-layout#brands",
       "flex-layout.row#SEO"
     ]
   },
@@ -34,6 +35,7 @@
   "image#main-banner1": {
     "props": {
       "src": "assets/main-banner-1.jpg",
+      "link": "/wooden-perfume",
       "width": "100%",
       "blockClass": "main-banners-images"
     }
@@ -41,6 +43,7 @@
   "image#main-banner2": {
     "props": {
       "src": "assets/main-banner-2.jpg",
+      "link": "/wooden-perfume",
       "width": "100%",
       "blockClass": "main-banners-images"
     }
@@ -48,6 +51,7 @@
   "image#main-banner3": {
     "props": {
       "src": "assets/main-banner-3.jpg",
+      "link": "/wooden-perfume",
       "width": "100%",
       "blockClass": "main-banners-images"
     }
@@ -140,9 +144,6 @@
     "props": {
       "src": "assets/banner-grid-2.jpg",
       "mobileImage": "assets/banner-grid-2.jpg",
-      "position": "left",
-      "height": "500",
-      "minWidth": "100%",
       "blockClass": "grid-row"
     }
   },
@@ -150,8 +151,6 @@
     "props": {
       "src": "assets/banner-grid-3.jpg",
       "mobileImage": "assets/banner-grid-3.jpg",
-      "width": "100%",
-      "height": "250",
       "blockClass": "grid-col"
     }
   },
@@ -159,8 +158,6 @@
     "props": {
       "src": "assets/banner-grid-4.jpg",
       "mobileImage": "assets/banner-grid-4.jpg",
-      "width": "100%",
-      "height": "250",
       "blockClass": "grid-col"
     }
   },
@@ -175,6 +172,7 @@
   "image#imageSEO": {
     "props": {
       "src": "assets/seo-banner.jpg",
+      "maxHeight": "800px",
       "blockClass": "seo-image"
     }
   },
@@ -201,6 +199,71 @@
       "blockClass": "seo-text",
       "textColor": "c-muted-1",
       "font": "t-heading-2"
+    }
+  },
+  "slider-layout#brands": {
+    "children": [
+      "image#brands1",
+      "image#brands2",
+      "image#brands3",
+      "image#brands4",
+      "image#brands5"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "titleText": "Nossas Marcas",
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": true,
+      "blockClass": "slider-brands"
+    }
+  },
+  "image#brands1": {
+    "props": {
+      "src": "assets/brands1.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands2": {
+    "props": {
+      "src": "assets/brands2.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands3": {
+    "props": {
+      "src": "assets/brands3.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands4": {
+    "props": {
+      "src": "assets/brands4.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
+    }
+  },
+  "image#brands5": {
+    "props": {
+      "src": "assets/brands5.jpg",
+      "link": "/wooden-perfume",
+      "height": "300px",
+      "blockClass": "brands-images"
     }
   }
 }
