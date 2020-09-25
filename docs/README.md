@@ -9,8 +9,9 @@
 - Marcos Maia
 - Matheus Araujo Cunha
 
-Loja: [https://grupo7--beautytheme.myvtex.com/](https://grupo7--beautytheme.myvtex.com/)
-
+Loja: [https://grupo7--beautytheme.myvtex.com/](https://grupo7--beautytheme.myvtex.com/)</br>
+Página Professional: [https://grupo7--beautytheme.myvtex.com/professional-landing](https://grupo7--beautytheme.myvtex.com/professional-landing)</br>
+Página Sobre nós: [https://grupo7--beautytheme.myvtex.com/about-us](https://grupo7--beautytheme.myvtex.com/about-us)</br>
 Wireframe Home [Link](https://xd.adobe.com/view/6e88c285-ce27-4450-86f3-3eeebf65abff-3bdb/) <br/>
 Wireframe Produto [Link](https://xd.adobe.com/view/6e88c285-ce27-4450-86f3-3eeebf65abff-3bdb/screen/06337f97-e808-4c28-b7bf-511c88559cad)</br>
 

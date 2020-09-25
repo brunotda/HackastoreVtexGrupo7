@@ -31,10 +31,10 @@
           "highlight": false,
           "itemProps": {
               "type":"internal",
-              "href": "#",
+              "href": "/about-us",
               "noFollow": false,
-              "tagTitle": "Sobre Nós",
-              "text": "Sobre Nós"
+              "tagTitle": "Grupo 7 Cosméticos",
+              "text": "Grupo 7 Cosméticos"
           }
       }
   },
@@ -46,10 +46,10 @@
           "highlight": false,
           "itemProps":{
               "type": "internal",
-              "href": "#",
+              "href": "/professional-landing",
               "noFollow": false,
-              "tagTitle": "Grupo 7 Cosméticos",
-              "text": "Grupo 7 Cosméticos"
+              "tagTitle": "Recomendações de profissionais!",
+              "text": "Recomendações de profissionais!"
           }
       }
   },
