@@ -5,7 +5,7 @@
 - Jeronimo Silva
 - Laís Escorcio Correia
 - Marcos Maia
-- Matheus
+- Matheus Araujo Cunha
 
 
 Loja: [https://grupo7--beautytheme.myvtex.com/](https://grupo7--beautytheme.myvtex.com/)
