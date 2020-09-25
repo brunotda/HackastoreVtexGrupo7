@@ -97,3 +97,18 @@
 .shippingContainer .items-start {
   width: 50%;
 } */
+
+
+.imageElement--professional-landing-banner{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  object-fit: none;
+}
+
+
+@media (max-width: 1024px){
+  .imageElement--professional-landing-banner{
+    object-fit: cover;
+  }
+}

@@ -5,3 +5,32 @@
 .container--newsletter{
   max-height: 350px;
 }
+
+.container--professional-landing-title{
+  color: white;
+  background-color:#FFCDB2;
+  font-family: 'Montserrat' !important;
+}
+
+.wrapper--professional-landing-description{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph--professional-landing-description{
+  width: 50%;
+  color: #1E1D20;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Montserrat' !important;
+}
+
+@media (max-width: 1024px){
+  .container--professional-landing-title{
+    font-size: 32px;
+  }
+  .paragraph--professional-landing-description{
+    width: 90%;
+  }
+}
