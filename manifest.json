@@ -1,7 +1,7 @@
 {
-  "vendor": "grupo7",
+  "vendor": "beautytheme",
   "name": "grupo7theme",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
