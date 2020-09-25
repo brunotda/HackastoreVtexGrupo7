@@ -17,7 +17,8 @@
       "image"
     ],
     "props": {
-      "blockClass": "als-footer"
+      "blockClass": "als-footer",
+      "preventHorizontalStretch": true
     }
   },
   "image": {
@@ -37,13 +38,17 @@
     "props": {
       "blockClass": "menu-row",
       "paddingTop": 6,
-      "paddingBottom": 3
+      "paddingBottom": 3,
+      "preventHorizontalStretch": true
     }
   },
   "flex-layout.row#footer-3-desktop": {
     "children": [
       "social-networks"
-    ]
+    ],
+    "props": {
+      "preventHorizontalStretch": true
+    }
   },
   "social-networks": {
     "props": {
