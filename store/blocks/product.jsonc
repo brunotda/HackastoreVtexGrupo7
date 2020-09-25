@@ -50,9 +50,9 @@
     "props": {
       "colGap": 9,
       "rowGap": 7,
-      "marginTop": 4,
+      "marginTop": 2,
       "marginBottom": 7,
-      "paddingTop": 7,
+      "paddingTop": 2,
       "paddingBottom": 7,
       "blockClass": "product-main"
     },
@@ -82,7 +82,9 @@
     ],
     "props": {
       "width": "70%",
-      "rowGap": 0
+      "rowGap": 0,
+      "paddingRight": 2,
+      "paddingLeft": 2
     }
   },
   "flex-layout.row#product-image": {
@@ -99,7 +101,9 @@
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap":0,
+      "paddingRight": 2,
+      "paddingLeft": 2
     },
     "children": [
       "responsive-layout.desktop#product-info",
