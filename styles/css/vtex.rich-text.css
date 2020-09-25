@@ -9,6 +9,19 @@
   font-size: 20px;
   padding: 0 20px;
   margin: 0;
+  font-family: 'Montserrat' !important;
+}
+
+.paragraph--newsletter{
+  font-size: 16px;
+  color: #1E1D20;
+  font-weight: 700;
+  font-family: 'Montserrat' !important;
+}
+
+.paragraph--seo-title{
+  padding-top: 0px !important;
+  margin-top: 20px !important;
 }
 
 @media (min-width: 660px) {

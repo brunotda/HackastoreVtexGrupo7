@@ -87,3 +87,12 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+.menuContainerNav{
+  width: 100%;
+}
+
+.menuContainer{
+  display: flex;
+  justify-content: center;
+}

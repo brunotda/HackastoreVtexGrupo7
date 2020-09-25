@@ -21,3 +21,7 @@
   background-color: #ffffff;
   padding: 1.5em 0;
 }
+
+.headerRowContainer--main-topbar{
+  padding: 0 5%;
+}

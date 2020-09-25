@@ -185,7 +185,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "Our brands",
+      "text": "Sobre o Grupo 7",
       "blockClass": "seo-title",
       "textColor": "c-muted-1",
       "font": "t-heading-2"
@@ -195,10 +195,9 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "Our brands",
+      "text": "Somos um grupo misto, que além de beleza temos instintos, e são esses instintos que fazem com que este grupo se torne a melhor fragância de todo o VTEX Training Week, sinta nosso perfume, veja nossa beleza, desfrute de nossa loja!",
       "blockClass": "seo-text",
-      "textColor": "c-muted-1",
-      "font": "t-heading-2"
+      "textColor": "c-muted-1"
     }
   },
   "slider-layout#brands": {
