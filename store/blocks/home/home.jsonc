@@ -3,6 +3,7 @@
     "blocks": [
       "slider-layout#home",
       "flex-layout.row#newsletter",
+      "__fold__",
       "flex-layout.row#prateleira1",
       "flex-layout.row#prateleira2",
       "__fold__",
@@ -198,71 +199,6 @@
       "text": "Somos um grupo misto, que além de beleza temos instintos, e são esses instintos que fazem com que este grupo se torne a melhor fragância de todo o VTEX Training Week, sinta nosso perfume, veja nossa beleza, desfrute de nossa loja!",
       "blockClass": "seo-text",
       "textColor": "c-muted-1"
-    }
-  },
-  "slider-layout#brands": {
-    "children": [
-      "image#brands1",
-      "image#brands2",
-      "image#brands3",
-      "image#brands4",
-      "image#brands5"
-    ],
-    "props": {
-      "autoplay": {
-        "timeout": 7000,
-        "stopOnHover": true
-      },
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "titleText": "Nossas Marcas",
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": true,
-      "blockClass": "slider-brands"
-    }
-  },
-  "image#brands1": {
-    "props": {
-      "src": "assets/brands1.jpg",
-      "link": "/wooden-perfume",
-      "height": "300px",
-      "blockClass": "brands-images"
-    }
-  },
-  "image#brands2": {
-    "props": {
-      "src": "assets/brands2.jpg",
-      "link": "/wooden-perfume",
-      "height": "300px",
-      "blockClass": "brands-images"
-    }
-  },
-  "image#brands3": {
-    "props": {
-      "src": "assets/brands3.jpg",
-      "link": "/wooden-perfume",
-      "height": "300px",
-      "blockClass": "brands-images"
-    }
-  },
-  "image#brands4": {
-    "props": {
-      "src": "assets/brands4.jpg",
-      "link": "/wooden-perfume",
-      "height": "300px",
-      "blockClass": "brands-images"
-    }
-  },
-  "image#brands5": {
-    "props": {
-      "src": "assets/brands5.jpg",
-      "link": "/wooden-perfume",
-      "height": "300px",
-      "blockClass": "brands-images"
     }
   }
 }
