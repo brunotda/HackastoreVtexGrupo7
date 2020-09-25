@@ -1,4 +1,6 @@
 # Hackastore Vtex
+![GRUPO7](/assets/logogrupo7-preto.png)
+
 ## Grupo 7
 - Anderson Lopes
 - Bruno Araujo
@@ -6,7 +8,6 @@
 - Laís Escorcio Correia
 - Marcos Maia
 - Matheus Araujo Cunha
-
 
 Loja: [https://grupo7--beautytheme.myvtex.com/](https://grupo7--beautytheme.myvtex.com/)
 
@@ -19,3 +20,5 @@ Wireframe Produto [Link](https://xd.adobe.com/view/6e88c285-ce27-4450-86f3-3eeeb
 <span style="color:#E5989B">▇</span> #E5989B <br/>
 <span style="color:#B5838D">▇</span> #B5838D <br/>
 <span style="color:#1E1D20">▇</span> #1E1D20 <br/>
+[Ver Online - coolors.co](https://coolors.co/ffcdb2-ffb4a2-e5989b-b5838d-1e1d20)<br/>
+![coolors.co](https://images-ext-1.discordapp.net/external/sSibpNS_B3YBaC763RoyX3fZd9VpkjDXamp8y61QkIY/https/res.cloudinary.com/coolors/image/upload/v1601055059/live/temporary/rmbb6jbrq6ytqfqhxs7d.png?width=954&height=501)

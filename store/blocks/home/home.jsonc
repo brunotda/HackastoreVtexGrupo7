@@ -29,7 +29,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": true,
+      "showPaginationDots": false,
       "blockClass": "main-banners"
     }
   },
@@ -59,21 +59,21 @@
   },
   "flex-layout.row#prateleira1": {
     "children": [
-      "list-context.image-list#prateleira-image1", "shelf#shelf1"
+      "list-context.image-list#prateleira-image1", "flex-layout.col#shelf1"
     ],
     "props": {
-      "blockClass": "shelf-banner"
+      "preventVerticalStretch": true
     }
   },
   "list-context.image-list#prateleira-image1":{
     "children": ["slider-layout#prateleira-image1"],
     "props": {
       "width": "auto",
-      "height": 525,
+      "height": "auto",
       "images": [
         {
-          "image": "assets/banner-first-1.jpg",
-          "mobileImage": "assets/banner-first-1.jpg"
+          "image": "assets/banner-first-1-2.jpg",
+          "mobileImage": "assets/banner-first-1-2.jpg"
         }
       ]
     }
@@ -89,20 +89,37 @@
       "blockClass": "prateleira-image"
     }
   },
+  "flex-layout.col#shelf1": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": ["shelf#shelf1"]
+  },
   "flex-layout.row#prateleira2": {
     "children": [
-      "shelf#shelf2", "list-context.image-list#prateleira-image2"
-    ]
+      "flex-layout.col#shelf2", "list-context.image-list#prateleira-image2"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#shelf2": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": ["shelf#shelf2"]
   },
   "list-context.image-list#prateleira-image2":{
     "children": ["slider-layout#prateleira-image2"],
     "props": {
       "width": "auto",
-      "height": 525,
+      "height": "auto",
       "images": [
         {
-          "image": "assets/banner-prateleira-2.jpg",
-          "mobileImage": "assets/banner-prateleira-2.jpg"
+          "image": "assets/banner-prateleira-2-2.jpg",
+          "mobileImage": "assets/banner-prateleira-2-2.jpg"
         }
       ]
     }
@@ -116,15 +133,6 @@
       },
       "infinite": true,
       "blockClass": "prateleira-image"
-    }
-  },
-  "image#prateleira2": {
-    "props": {
-      "src": "assets/banner-prateleira-2.jpg",
-      "mobileImage": "assets/banner-prateleira-2.jpg",
-      "maxWidth": "100%",
-      "position": "right",
-      "blockClass": "prateleira-banners"
     }
   },
   "flex-layout.row#SEO": {
