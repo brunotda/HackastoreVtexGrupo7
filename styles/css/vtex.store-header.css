@@ -4,7 +4,7 @@
 }
 
 .headerRow--main-header .headerRowBackground {
-  background-color: #212222;
+  background-color: #FFFFFF;
   padding: 1.5em 0;
 }
 /*
@@ -18,6 +18,6 @@
 }
 
 .headerRow--main-header-mobile .headerRowBackground {
-  background-color: #212222;
+  background-color: #ffffff;
   padding: 1.5em 0;
 }
