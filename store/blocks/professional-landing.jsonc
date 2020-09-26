@@ -3,7 +3,8 @@
     "blocks": [
       "rich-text#professional-landing-title",
       "rich-text#professional-landing-description",
-      "image#professional-landing-banner"
+      "image#professional-landing-banner",
+      "tab-layout#lp"
     ]
   },
   "rich-text#professional-landing-title": {
@@ -24,11 +25,96 @@
     }
   },
   "image#professional-landing-banner": {
-      "props": {
-        "src": "assets/maquiadores.jpg",
-        "alt": "Maquiadores famosos",
-        "maxWidth": "100%",
-        "blockClass": "professional-landing-banner"
-      }
+    "props": {
+      "src": "assets/maquiadores.jpg",
+      "alt": "Maquiadores famosos",
+      "maxWidth": "100%",
+      "blockClass": "professional-landing-banner"
+    }
+  },
+
+  "tab-layout#lp": {
+    "children": ["tab-list#influencer", "tab-content#influencer"]
+  },
+
+  "tab-list#influencer": {
+    "children": [
+      "tab-list.item#influencer1",
+      "tab-list.item#influencer2",
+      "tab-list.item#influencer3"
+    ],
+    "props":{
+      "blockClass":"tab-lp-gruposete"
+    }
+  },
+  "tab-content#influencer": {
+    "children": [
+      "tab-content.item#influencer1",
+      "tab-content.item#influencer2",
+      "tab-content.item#influencer3"
+    ]
+  },
+  "tab-list.item#influencer1": {
+    "props": {
+      "label": "Victoria Ceridono",
+      "tabId": "victoriaCeridono",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#influencer2": {
+    "props": {
+      "label": "C. Kamura",
+      "tabId": "cKamura"
+    }
+  },
+  "tab-list.item#influencer3": {
+    "props": {
+      "label": "Marco Antonio de Biaggi",
+      "tabId": "marcoAntonio"
+    }
+  },
+  "tab-content.item#influencer1": {
+    "children": ["iframe#tab1"],
+    "props": {
+      "tabId": "victoriaCeridono",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-content.item#influencer2": {
+    "children": ["iframe#tab2"],
+    "props": {
+      "tabId": "cKamura"
+    }
+  },
+  "tab-content.item#influencer3": {
+    "children": ["iframe#tab3"],
+    "props": {
+      "tabId": "marcoAntonio"
+    }
+  },
+
+  "iframe#tab1": {
+    "props": {
+      "src": "https://www.youtube.com/embed/TNkvjXUDqpw",
+      "width": 665,
+      "height": 374,
+      "tabId": "victoriaCeridono"
+    }
+  },
+  "iframe#tab2": {
+    "props": {
+      "src": "https://www.youtube.com/embed/yLprJxiEM5U",
+      "width": 665,
+      "height": 374,
+      "tabId": "cKamura"
+    }
+  },
+  "iframe#tab3": {
+    "props": {
+      "src": "https://www.youtube.com/embed/yLprJxiEM5U",
+      "width": 665,
+      "height": 374,
+      "tabId": "marcoAntonio"
+    }
   }
 }
